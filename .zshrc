@@ -1,25 +1,8 @@
 # BEGIN ANSIBLE MANAGED BLOCK
-# Load homebrew shell variables
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# Force certain more-secure behaviours from homebrew
-export HOMEBREW_NO_INSECURE_REDIRECT=1
-export HOMEBREW_CASK_OPTS=--require-sha
-export HOMEBREW_DIR=/opt/homebrew
-export HOMEBREW_BIN=/opt/homebrew/bin
-
-# Load python shims
-eval "$(pyenv init -)"
-
-# Load ruby shims
-eval "$(rbenv init -)"
 
 # Prefer GNU binaries to Macintosh binaries.
 export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
 
-# Add GCloud to PATH
-source "/opt/homebrew/share/google-cloud-sdk/path.zsh.inc"
-source "/opt/homebrew/share/google-cloud-sdk/completion.zsh.inc"
 # Add datadog devtools binaries to the PATH
 export PATH="$HOME/dd/devtools/bin:$PATH"
 
@@ -67,7 +50,5 @@ zstyle ':vcs_info:git:*' formats '%b '
 
 setopt PROMPT_SUBST
 PROMPT='%F{green}%*%f %F{blue}%~%f %F{red}${vcs_info_msg_0_}%f$ '
-
-export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 
 [ -f ~/.config/gitsign/include.sh ] && source ~/.config/gitsign/include.sh
