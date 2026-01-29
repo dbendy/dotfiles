@@ -3,7 +3,7 @@
     name = Daniel Bendavid
 	signingkey = key::ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPWIXxQBqoNmQu19CRIjkOgji5fKrLW9GmKWL41X+LKk
 [core]
-	hooksPath = /usr/local/dd/global_hooks
+	hooksPath = /home/bits/.global_hooks
     editor = vi
 [gpg "ssh"]
 	program = dd-gitsign
