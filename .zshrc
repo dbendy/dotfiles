@@ -52,5 +52,6 @@ setopt PROMPT_SUBST
 PROMPT='%F{green}%*%f %F{blue}%~%f %F{pink}${vcs_info_msg_0_}%f$ '
 
 alias gpr='git pull --rebase origin HEAD'
+alias claudd='claude --dangerously-skip-permissions'
 
 [ -f ~/.config/gitsign/include.sh ] && source ~/.config/gitsign/include.sh
