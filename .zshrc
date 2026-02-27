@@ -51,4 +51,6 @@ zstyle ':vcs_info:git:*' formats '%b '
 setopt PROMPT_SUBST
 PROMPT='%F{green}%*%f %F{blue}%~%f %F{pink}${vcs_info_msg_0_}%f$ '
 
+alias gpr='git pull --rebase origin HEAD'
+
 [ -f ~/.config/gitsign/include.sh ] && source ~/.config/gitsign/include.sh
