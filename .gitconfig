@@ -1,25 +1,9 @@
 [user]
-	email = daniel.bendavid@datadoghq.com
+	email = dbendy@gmail.com
     name = Daniel Bendavid
-	signingkey = key::ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPWIXxQBqoNmQu19CRIjkOgji5fKrLW9GmKWL41X+LKk
-[core]
-    editor = vi
-[gpg "ssh"]
-	program = dd-gitsign
-	allowedSignersFile = /Users/daniel.bendavid/.config/gitsign/allowed-signers
-[gpg]
-	format = ssh
-[dd-gitsign]
-	username = dbendy
-[commit]
-	gpgSign = true
-[tag]
-	gpgSign = true
 [push]
 	autoSetupRemote = true
 	default = current
-[url "git@github.com:"]
-	insteadOf = https://github.com/
 [pager]
 	branch = false
 [fetch]
